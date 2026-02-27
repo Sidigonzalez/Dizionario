@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor.AI | Tutor Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="container">
+        <header>
+            <div class="logo">Traductor.<span>AI</span></div>
+            <p>Definizioni e Traduzioni Real-Time</p>
+        </header>
+
+        <main class="glass-card">
+            <div class="field">
+                <label>Lingua di destinazione</label>
+                <select id="langTarget">
+                    <option value="Inglese">Inglese 🇬🇧</option>
+                    <option value="Spagnolo">Spagnolo 🇪🇸</option>
+                    <option value="Francese">Francese 🇫🇷</option>
+                    <option value="Tedesco">Tedesco 🇩🇪</option>
+                    <option value="Svedese">Svedese 🇸🇪</option>
+                    <option value="Giapponese">Giapponese 🇯🇵</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Parola o Frase</label>
+                <textarea id="textInput" placeholder="Esempio: 'Cane' o 'Il gatto è sul tavolo'"></textarea>
+            </div>
+
+            <button id="mainBtn">
+                <span id="btnText">Analizza Ora</span>
+                <div id="loader" class="loader"></div>
+            </button>
+
+            <div id="resultArea" class="result-container hidden">
+                <div class="badge">Analisi del Tutor</div>
+                <div id="apiResponse" class="response-text"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
